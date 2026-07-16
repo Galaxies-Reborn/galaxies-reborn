@@ -13,7 +13,8 @@ selecting NGE never downloads CU or Pre-CU content.
 
 | Flavor | Folder | Status | Description |
 | --- | --- | --- | --- |
-| NGE | `nge/` | Available | New Game Enhancements era. The current SWGSource baseline. |
+| SWG Source | `swg-source/` | Available | Unmodified upstream SWGSource. The baseline the others fork from. |
+| NGE | `nge/` | Available | New Game Enhancements era, on the Galaxies Reborn forks. |
 | CU | `cu/` | Not published | Combat Upgrade era. |
 | Pre-CU | `pre-cu/` | Not published | Pre-Combat Upgrade era. |
 
@@ -36,7 +37,12 @@ channels/
 
 | Flavor | Variant | Branch | Description |
 | --- | --- | --- | --- |
+| SWG Source | `base` | `master` | Unmodified upstream SWGSource server and client sources, pinned to a known-good revision. |
 | NGE | `x64-dx9-vanilla` | `x64-dx9-vanilla` | Baseline 64-bit DirectX 9 regular and God clients with matching server revisions. |
+
+The NGE variant is the SWG Source baseline with Galaxies Reborn forks substituted
+for `src` and `stationapi`; every other pinned revision is currently identical
+between the two.
 
 ## Cloning a Variant
 

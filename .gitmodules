@@ -10,3 +10,15 @@
 	path = nge/x64-dx9-vanilla/client-tools
 	url = https://github.com/Galaxies-Reborn/client-tools.git
 	branch = x64-dx9-vanilla
+[submodule "swg-source/base/swg-main"]
+	path = swg-source/base/swg-main
+	url = https://github.com/SWG-Source/swg-main.git
+	branch = master
+[submodule "swg-source/base/client-assets"]
+	path = swg-source/base/client-assets
+	url = https://github.com/SWG-Source/client-assets.git
+	branch = master
+[submodule "swg-source/base/client-tools"]
+	path = swg-source/base/client-tools
+	url = https://github.com/SWG-Source/client-tools.git
+	branch = master

@@ -2,6 +2,21 @@
   "schemaVersion": 3,
   "flavors": [
     {
+      "id": "swg-source",
+      "displayName": "SWG Source",
+      "description": "Unmodified upstream SWGSource. The baseline every other flavor forks from.",
+      "path": "swg-source",
+      "available": true,
+      "variants": [
+        {
+          "id": "base",
+          "displayName": "SWG Source Base",
+          "manifest": "channels/swg-source/base.json",
+          "description": "Upstream server and client sources pinned to a known-good revision of master."
+        }
+      ]
+    },
+    {
       "id": "nge",
       "displayName": "NGE",
       "description": "New Game Enhancements era. The current SWGSource baseline.",

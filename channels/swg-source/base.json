@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 3,
+  "id": "base",
+  "flavor": "swg-source",
+  "displayName": "SWG Source Base",
+  "branch": "master",
+  "description": "Unmodified upstream SWGSource server and client sources, pinned to a known-good revision of master.",
+  "publishedAt": "2026-07-16T00:00:00Z",
+  "server": {
+    "rootDirectory": "server",
+    "mainRepositoryPath": "swg-main",
+    "assetsRepositoryPath": "client-assets",
+    "submodules": [
+      {
+        "name": "swg-main",
+        "path": "swg-source/base/swg-main",
+        "installPath": "swg-main",
+        "repository": "https://github.com/SWG-Source/swg-main",
+        "branch": "master",
+        "recursive": true,
+        "required": true,
+        "approximateBytes": 22553600,
+        "description": "Upstream server source. Recursively resolves dsrc, src, serverdata, stationapi, and exe from SWG-Source."
+      },
+      {
+        "name": "client-assets",
+        "path": "swg-source/base/client-assets",
+        "installPath": "client-assets",
+        "repository": "https://github.com/SWG-Source/client-assets",
+        "branch": "master",
+        "recursive": false,
+        "required": true,
+        "approximateBytes": 204272640,
+        "description": "Upstream client asset source used when building server-side asset data."
+      },
+      {
+        "name": "client-tools",
+        "path": "swg-source/base/client-tools",
+        "installPath": "client-tools",
+        "repository": "https://github.com/SWG-Source/client-tools",
+        "branch": "master",
+        "recursive": false,
+        "required": false,
+        "approximateBytes": 362769408,
+        "description": "Upstream client build toolchain. Not required to run a server."
+      }
+    ]
+  },
+  "clients": {
+    "torrentAsset": "",
+    "torrentUrl": "",
+    "torrentSha256": "",
+    "infoHashV1": "",
+    "payloadBytes": 0,
+    "payloadDirectory": "SWGSource-base-clients",
+    "regularExecutable": "SWGSource-base-clients/SwgClient_r.exe",
+    "godExecutable": "SWGSource-base-clients/SwgGodClient_r.exe",
+    "regularLoginConfiguration": "SWGSource-base-clients/login.cfg",
+    "godLoginConfiguration": "SWGSource-base-clients/client.cfg"
+  }
+}
