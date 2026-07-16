@@ -1,9 +1,12 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "id": "x64-dx9-vanilla",
+  "project": "galaxies-reborn",
   "flavor": "nge",
+  "variantPath": "galaxies-reborn/nge/x64-dx9-vanilla",
   "displayName": "x64 DirectX 9 Vanilla",
   "branch": "x64-dx9-vanilla",
+  "pipeline": "swgSource",
   "description": "SWG Source x64 DirectX 9 regular and God clients with matching server revisions.",
   "publishedAt": "2026-07-11T00:00:00Z",
   "server": {
@@ -13,7 +16,7 @@
     "submodules": [
       {
         "name": "swg-main",
-        "path": "nge/x64-dx9-vanilla/swg-main",
+        "path": "galaxies-reborn/nge/x64-dx9-vanilla/swg-main",
         "installPath": "swg-main",
         "repository": "https://github.com/Galaxies-Reborn/swg-main",
         "branch": "x64-dx9-vanilla",
@@ -24,7 +27,7 @@
       },
       {
         "name": "client-assets",
-        "path": "nge/x64-dx9-vanilla/client-assets",
+        "path": "galaxies-reborn/nge/x64-dx9-vanilla/client-assets",
         "installPath": "client-assets",
         "repository": "https://github.com/Galaxies-Reborn/client-assets",
         "branch": "x64-dx9-vanilla",
@@ -35,7 +38,7 @@
       },
       {
         "name": "client-tools",
-        "path": "nge/x64-dx9-vanilla/client-tools",
+        "path": "galaxies-reborn/nge/x64-dx9-vanilla/client-tools",
         "installPath": "client-tools",
         "repository": "https://github.com/Galaxies-Reborn/client-tools",
         "branch": "x64-dx9-vanilla",
@@ -47,6 +50,7 @@
     ]
   },
   "clients": {
+    "published": true,
     "torrentAsset": "SWGSource-x64-dx9-vanilla-clients.torrent",
     "torrentUrl": "",
     "torrentSha256": "5cc2594725712b44491af93d21186d97f1d80bc8fad3f3a7860a67a12cb02861",

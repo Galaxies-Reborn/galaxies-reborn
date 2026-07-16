@@ -1,12 +1,70 @@
 {
-  "schemaVersion": 3,
-  "flavors": [
+  "schemaVersion": 4,
+  "projects": [
+    {
+      "id": "galaxies-reborn",
+      "displayName": "Galaxies Reborn",
+      "description": "Galaxies Reborn source sets, grouped by era.",
+      "path": "galaxies-reborn",
+      "available": true,
+      "flavors": [
+        {
+          "id": "nge",
+          "displayName": "NGE",
+          "description": "New Game Enhancements era, on the Galaxies Reborn forks.",
+          "path": "galaxies-reborn/nge",
+          "available": true,
+          "variants": [
+            {
+              "id": "x64-dx9-vanilla",
+              "displayName": "x64 DirectX 9 Vanilla",
+              "manifest": "channels/galaxies-reborn/nge/x64-dx9-vanilla.json",
+              "description": "Known-good 64-bit regular and God clients with the matching containerized server source."
+            }
+          ]
+        },
+        {
+          "id": "cu",
+          "displayName": "CU",
+          "description": "Combat Upgrade era. No source set is published yet.",
+          "path": "galaxies-reborn/cu",
+          "available": false,
+          "variants": []
+        },
+        {
+          "id": "pre-cu",
+          "displayName": "Pre-CU",
+          "description": "Pre-Combat Upgrade era. No source set is published yet.",
+          "path": "galaxies-reborn/pre-cu",
+          "available": false,
+          "variants": []
+        }
+      ],
+      "variants": []
+    },
+    {
+      "id": "swgemu",
+      "displayName": "SWGEmu",
+      "description": "SWGEmu Core3, an independent Pre-CU emulator with its own container stack.",
+      "path": "swgemu",
+      "available": true,
+      "flavors": [],
+      "variants": [
+        {
+          "id": "core3",
+          "displayName": "SWGEmu Core3",
+          "manifest": "channels/swgemu/core3.json",
+          "description": "Core3 Pre-CU emulator. Requires retail client .tre files supplied by the operator."
+        }
+      ]
+    },
     {
       "id": "swg-source",
       "displayName": "SWG Source",
-      "description": "Unmodified upstream SWGSource. The baseline every other flavor forks from.",
+      "description": "Unmodified upstream SWGSource. The baseline Galaxies Reborn forks from.",
       "path": "swg-source",
       "available": true,
+      "flavors": [],
       "variants": [
         {
           "id": "base",
@@ -15,37 +73,6 @@
           "description": "Upstream server and client sources pinned to a known-good revision of master."
         }
       ]
-    },
-    {
-      "id": "nge",
-      "displayName": "NGE",
-      "description": "New Game Enhancements era. The current SWGSource baseline.",
-      "path": "nge",
-      "available": true,
-      "variants": [
-        {
-          "id": "x64-dx9-vanilla",
-          "displayName": "x64 DirectX 9 Vanilla",
-          "manifest": "channels/nge/x64-dx9-vanilla.json",
-          "description": "Known-good 64-bit regular and God clients with the matching containerized server source."
-        }
-      ]
-    },
-    {
-      "id": "cu",
-      "displayName": "CU",
-      "description": "Combat Upgrade era. No source set is published yet.",
-      "path": "cu",
-      "available": false,
-      "variants": []
-    },
-    {
-      "id": "pre-cu",
-      "displayName": "Pre-CU",
-      "description": "Pre-Combat Upgrade era. No source set is published yet.",
-      "path": "pre-cu",
-      "available": false,
-      "variants": []
     }
   ]
 }

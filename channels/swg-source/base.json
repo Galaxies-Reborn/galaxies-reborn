@@ -1,9 +1,12 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "id": "base",
-  "flavor": "swg-source",
+  "project": "swg-source",
+  "flavor": "",
+  "variantPath": "swg-source/base",
   "displayName": "SWG Source Base",
   "branch": "master",
+  "pipeline": "swgSource",
   "description": "Unmodified upstream SWGSource server and client sources, pinned to a known-good revision of master.",
   "publishedAt": "2026-07-16T00:00:00Z",
   "server": {
@@ -47,15 +50,6 @@
     ]
   },
   "clients": {
-    "torrentAsset": "",
-    "torrentUrl": "",
-    "torrentSha256": "",
-    "infoHashV1": "",
-    "payloadBytes": 0,
-    "payloadDirectory": "SWGSource-base-clients",
-    "regularExecutable": "SWGSource-base-clients/SwgClient_r.exe",
-    "godExecutable": "SWGSource-base-clients/SwgGodClient_r.exe",
-    "regularLoginConfiguration": "SWGSource-base-clients/login.cfg",
-    "godLoginConfiguration": "SWGSource-base-clients/client.cfg"
+    "published": false
   }
 }

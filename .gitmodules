@@ -1,13 +1,13 @@
-[submodule "nge/x64-dx9-vanilla/swg-main"]
-	path = nge/x64-dx9-vanilla/swg-main
+[submodule "galaxies-reborn/nge/x64-dx9-vanilla/swg-main"]
+	path = galaxies-reborn/nge/x64-dx9-vanilla/swg-main
 	url = https://github.com/Galaxies-Reborn/swg-main.git
 	branch = x64-dx9-vanilla
-[submodule "nge/x64-dx9-vanilla/client-assets"]
-	path = nge/x64-dx9-vanilla/client-assets
+[submodule "galaxies-reborn/nge/x64-dx9-vanilla/client-assets"]
+	path = galaxies-reborn/nge/x64-dx9-vanilla/client-assets
 	url = https://github.com/Galaxies-Reborn/client-assets.git
 	branch = x64-dx9-vanilla
-[submodule "nge/x64-dx9-vanilla/client-tools"]
-	path = nge/x64-dx9-vanilla/client-tools
+[submodule "galaxies-reborn/nge/x64-dx9-vanilla/client-tools"]
+	path = galaxies-reborn/nge/x64-dx9-vanilla/client-tools
 	url = https://github.com/Galaxies-Reborn/client-tools.git
 	branch = x64-dx9-vanilla
 [submodule "swg-source/base/swg-main"]
@@ -22,3 +22,7 @@
 	path = swg-source/base/client-tools
 	url = https://github.com/SWG-Source/client-tools.git
 	branch = master
+[submodule "swgemu/core3/Core3"]
+	path = swgemu/core3/Core3
+	url = https://github.com/swgemu/Core3.git
+	branch = unstable

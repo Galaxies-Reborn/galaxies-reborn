@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 4,
+  "id": "core3",
+  "project": "swgemu",
+  "flavor": "",
+  "variantPath": "swgemu/core3",
+  "displayName": "SWGEmu Core3",
+  "branch": "unstable",
+  "pipeline": "core3",
+  "description": "SWGEmu Core3 Pre-CU emulator, built and run through its own container stack. Requires retail client .tre files supplied by the operator.",
+  "publishedAt": "2026-07-16T00:00:00Z",
+  "server": {
+    "rootDirectory": "server",
+    "mainRepositoryPath": "Core3",
+    "assetsRepositoryPath": "",
+    "submodules": [
+      {
+        "name": "Core3",
+        "path": "swgemu/core3/Core3",
+        "installPath": "Core3",
+        "repository": "https://github.com/swgemu/Core3",
+        "branch": "unstable",
+        "recursive": true,
+        "required": true,
+        "approximateBytes": 527802368,
+        "description": "Core3 server source. Recursively resolves engine3 at MMOCoreORB/utils/engine3."
+      }
+    ]
+  },
+  "clients": {
+    "published": false
+  }
+}
