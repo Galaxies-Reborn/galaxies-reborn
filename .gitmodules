@@ -1,0 +1,12 @@
+[submodule "nge/x64-dx9-vanilla/swg-main"]
+	path = nge/x64-dx9-vanilla/swg-main
+	url = https://github.com/Galaxies-Reborn/swg-main.git
+	branch = x64-dx9-vanilla
+[submodule "nge/x64-dx9-vanilla/client-assets"]
+	path = nge/x64-dx9-vanilla/client-assets
+	url = https://github.com/Galaxies-Reborn/client-assets.git
+	branch = x64-dx9-vanilla
+[submodule "nge/x64-dx9-vanilla/client-tools"]
+	path = nge/x64-dx9-vanilla/client-tools
+	url = https://github.com/Galaxies-Reborn/client-tools.git
+	branch = x64-dx9-vanilla

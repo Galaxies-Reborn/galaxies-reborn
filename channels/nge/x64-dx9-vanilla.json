@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 3,
+  "id": "x64-dx9-vanilla",
+  "flavor": "nge",
+  "displayName": "x64 DirectX 9 Vanilla",
+  "branch": "x64-dx9-vanilla",
+  "description": "SWG Source x64 DirectX 9 regular and God clients with matching server revisions.",
+  "publishedAt": "2026-07-11T00:00:00Z",
+  "server": {
+    "rootDirectory": "server",
+    "mainRepositoryPath": "swg-main",
+    "assetsRepositoryPath": "client-assets",
+    "submodules": [
+      {
+        "name": "swg-main",
+        "path": "nge/x64-dx9-vanilla/swg-main",
+        "installPath": "swg-main",
+        "repository": "https://github.com/Galaxies-Reborn/swg-main",
+        "branch": "x64-dx9-vanilla",
+        "recursive": true,
+        "required": true,
+        "approximateBytes": 22523904,
+        "description": "Server source. Recursively resolves dsrc, src, serverdata, stationapi, and exe."
+      },
+      {
+        "name": "client-assets",
+        "path": "nge/x64-dx9-vanilla/client-assets",
+        "installPath": "client-assets",
+        "repository": "https://github.com/Galaxies-Reborn/client-assets",
+        "branch": "x64-dx9-vanilla",
+        "recursive": false,
+        "required": true,
+        "approximateBytes": 204235776,
+        "description": "Client asset source used when building server-side asset data."
+      },
+      {
+        "name": "client-tools",
+        "path": "nge/x64-dx9-vanilla/client-tools",
+        "installPath": "client-tools",
+        "repository": "https://github.com/Galaxies-Reborn/client-tools",
+        "branch": "x64-dx9-vanilla",
+        "recursive": false,
+        "required": false,
+        "approximateBytes": 384245760,
+        "description": "Client build toolchain. Not required to run a server or a released client."
+      }
+    ]
+  },
+  "clients": {
+    "torrentAsset": "SWGSource-x64-dx9-vanilla-clients.torrent",
+    "torrentUrl": "",
+    "torrentSha256": "5cc2594725712b44491af93d21186d97f1d80bc8fad3f3a7860a67a12cb02861",
+    "infoHashV1": "2f16b5e2a7897ea0ad084dc351b7c93057babbee",
+    "payloadBytes": 16514752922,
+    "payloadDirectory": "SWGSource-x64-dx9-vanilla-clients",
+    "regularExecutable": "SWGSource-x64-dx9-vanilla-clients/SWGSource Client v3.0/SwgClient_r.exe",
+    "godExecutable": "SWGSource-x64-dx9-vanilla-clients/Godclient v1.0 by Erusman/swg/exe/win32/SwgGodClient_r.exe",
+    "regularLoginConfiguration": "SWGSource-x64-dx9-vanilla-clients/SWGSource Client v3.0/login.cfg",
+    "godLoginConfiguration": "SWGSource-x64-dx9-vanilla-clients/Godclient v1.0 by Erusman/swg/exe/win32/client.cfg"
+  }
+}

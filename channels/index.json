@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 3,
+  "flavors": [
+    {
+      "id": "nge",
+      "displayName": "NGE",
+      "description": "New Game Enhancements era. The current SWGSource baseline.",
+      "path": "nge",
+      "available": true,
+      "variants": [
+        {
+          "id": "x64-dx9-vanilla",
+          "displayName": "x64 DirectX 9 Vanilla",
+          "manifest": "channels/nge/x64-dx9-vanilla.json",
+          "description": "Known-good 64-bit regular and God clients with the matching containerized server source."
+        }
+      ]
+    },
+    {
+      "id": "cu",
+      "displayName": "CU",
+      "description": "Combat Upgrade era. No source set is published yet.",
+      "path": "cu",
+      "available": false,
+      "variants": []
+    },
+    {
+      "id": "pre-cu",
+      "displayName": "Pre-CU",
+      "description": "Pre-Combat Upgrade era. No source set is published yet.",
+      "path": "pre-cu",
+      "available": false,
+      "variants": []
+    }
+  ]
+}
