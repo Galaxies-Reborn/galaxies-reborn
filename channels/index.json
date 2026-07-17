@@ -19,7 +19,17 @@
               "id": "x64-dx9-vanilla",
               "displayName": "x64 DirectX 9 Vanilla",
               "manifest": "channels/galaxies-reborn/nge/x64-dx9-vanilla.json",
+              "renderer": "dx9",
+              "available": true,
               "description": "Known-good 64-bit regular and God clients with the matching containerized server source."
+            },
+            {
+              "id": "x64-dx11-vanilla",
+              "displayName": "x64 DirectX 11 Vanilla",
+              "manifest": "",
+              "renderer": "dx11",
+              "available": false,
+              "description": "DirectX 11 renderer. No source set is published yet."
             }
           ]
         },

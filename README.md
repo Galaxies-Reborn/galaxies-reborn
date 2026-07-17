@@ -20,13 +20,30 @@ Galaxies Reborn groups its variants under era flavors. SWGEmu and SWG Source
 offer their variants directly, so their folders are one level shallower. A
 project uses one shape or the other, never both.
 
-| Project | Flavor | Variant | Branch | Status |
-| --- | --- | --- | --- | --- |
-| Galaxies Reborn | NGE | `x64-dx9-vanilla` | `x64-dx9-vanilla` | Available |
-| Galaxies Reborn | CU | — | — | Not published |
-| Galaxies Reborn | Pre-CU | — | — | Not published |
-| SWGEmu | — | `core3` | `unstable` | Available |
-| SWG Source | — | `base` | `master` | Available |
+| Project | Flavor | Variant | Renderer | Branch | Status |
+| --- | --- | --- | --- | --- | --- |
+| Galaxies Reborn | NGE | `x64-dx9-vanilla` | DX9 | `x64-dx9-vanilla` | Available |
+| Galaxies Reborn | NGE | `x64-dx11-vanilla` | DX11 | — | Not published |
+| Galaxies Reborn | CU | — | — | — | Not published |
+| Galaxies Reborn | Pre-CU | — | — | — | Not published |
+| SWGEmu | — | `core3` | — | `unstable` | Available |
+| SWG Source | — | `base` | — | `master` | Available |
+
+## Renderers
+
+A variant declares the graphics backend it targets with `"renderer": "dx9" | "dx11"`. The
+renderer multiplies against era rather than nesting under it — DX9 and DX11 each
+apply across NGE, CU, and Pre-CU — so it is a declared facet, not another folder
+level. The launcher offers a renderer picker only where an era publishes more
+than one, and filters the variant list by it.
+
+Projects that are not renderer specific, such as SWGEmu and SWG Source, leave it
+unset and get no picker.
+
+A variant may be listed before it exists, with `"available": false` and an empty
+`manifest`, so an option can be seen coming. The launcher shows it, explains that
+nothing is published, and downloads nothing. An era stays `available` as long as
+one of its variants is.
 
 ## Layout
 
