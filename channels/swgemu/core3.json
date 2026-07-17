@@ -28,6 +28,6 @@
     ]
   },
   "clients": {
-    "published": false
+    "supported": false
   }
 }

@@ -51,16 +51,10 @@
     ]
   },
   "clients": {
-    "published": true,
-    "torrentAsset": "SWGSource-x64-dx9-vanilla-clients.torrent",
-    "torrentUrl": "",
-    "torrentSha256": "5cc2594725712b44491af93d21186d97f1d80bc8fad3f3a7860a67a12cb02861",
-    "infoHashV1": "2f16b5e2a7897ea0ad084dc351b7c93057babbee",
-    "payloadBytes": 16514752922,
-    "payloadDirectory": "SWGSource-x64-dx9-vanilla-clients",
-    "regularExecutable": "SWGSource-x64-dx9-vanilla-clients/SWGSource Client v3.0/SwgClient_r.exe",
-    "godExecutable": "SWGSource-x64-dx9-vanilla-clients/Godclient v1.0 by Erusman/swg/exe/win32/SwgGodClient_r.exe",
-    "regularLoginConfiguration": "SWGSource-x64-dx9-vanilla-clients/SWGSource Client v3.0/login.cfg",
-    "godLoginConfiguration": "SWGSource-x64-dx9-vanilla-clients/Godclient v1.0 by Erusman/swg/exe/win32/client.cfg"
+    "supported": true,
+    "regularExecutable": "SwgClient_r.exe",
+    "godExecutable": "SwgGodClient_r.exe",
+    "regularLoginConfiguration": "login.cfg",
+    "godLoginConfiguration": "client.cfg"
   }
 }
